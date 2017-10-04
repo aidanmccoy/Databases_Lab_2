@@ -1,3 +1,5 @@
+#Aidan McCoy
+
 DROP TABLE IF EXISTS Campuses;
 DROP TABLE IF EXISTS Fees;
 DROP TABLE IF EXISTS Degrees;
