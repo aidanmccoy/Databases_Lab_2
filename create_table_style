@@ -1,0 +1,120 @@
+#!/usr/bin/env python3
+
+import sys
+import re
+
+exit_status = 0
+
+# Nice wrapper to exit with message
+def error(msg, f = sys.stderr):
+    print(msg, file = f)
+    exit(1)
+
+# Wraps error to print file/line
+def style_error(msg, line):
+    global exit_status
+    print("{0}, Line {1:3d}: ".format(sys.argv[1], line) + msg)
+    exit_status = 2
+
+# Wrapper for case-insensitive regex
+def match(pattern, s):
+    return re.search(pattern, s, re.IGNORECASE)
+
+# Removes comments and trims whitespace from a line
+def trim_comments(s):
+    return re.sub(r'-- .*', '', s).rstrip()
+
+# Validates one attr per line
+# Function because a regex for this would kinda suck
+def one_attr(s):
+    parens = 0
+    count = 0
+
+    for c in s:
+        count += 1
+        if c == '(':
+            parens += 1
+        elif c == ')':
+            parens -= 1
+        elif parens == 0 and c == ',' and count != len(s):
+            return False
+
+    return True
+
+
+
+def main(argv):
+
+    if len(argv) != 2:
+        error("Usage: create_table_style <create_table.sql>")
+
+    try:
+        f = open(argv[1], 'r')
+    except IOError:
+        error("Could not open file for stylecheck.")
+
+    in_create = False
+    paren_count = 0
+    line_no = 0
+
+    for line in f:
+
+        line_no += 1
+ 
+        if line_no == 1 and not match(r'-- .*', line):
+            style_error("Must begin file with comment containing Cal Poly username", line_no)
+
+
+        if len(line) > 80:
+            style_error("Line is more than 80 columns.", line_no)
+
+        # Disallow non-standard comments (makes it easier to parse)
+        if match(r'(#|/\*)', line):
+            style_error("Only ANSI SQL comments: '-- ' (note the space!)",
+             line_no)
+        else:
+            line = trim_comments(line)
+
+        
+        paren_count += line.count('(')
+        paren_count -= line.count(')')
+
+        if match('CREATE TABLE', line):
+            if not match(r'^CREATE TABLE', line):
+                style_error("CREATE TABLE is not at start of line.", line_no)
+
+            # Matches anything that is not:
+            # CREATE TABLE (name) (
+            elif not match(r"CREATE TABLE\s+\S+\s*\($", line):
+                style_error("Other attributes on same line as CREATE TABLE",
+                 line_no)
+            
+            in_create = True
+
+
+
+        elif in_create:
+
+            # If we reached the end of a table, have the ); on its own line
+            # No ENGINE=InnoDB crap
+            if paren_count == 0:
+                if line != ');':
+                    style_error("End CREATE TABLE with only ');' on a new line", 
+                     line_no)
+                in_create = False
+                continue
+
+            # Pattern finds commas not at end of line
+            if not one_attr(line):
+                style_error("Only one attribute per line.", line_no)
+
+            if not match(r'^\s+', line):
+                style_error("No indentation.", line_no)
+
+    if line_no == 0:
+        error(argv[1] + " is empty")
+
+    exit(exit_status)
+
+if __name__ == "__main__":
+    main(sys.argv)
