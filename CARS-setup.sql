@@ -14,13 +14,13 @@ CREATE TABLE Names(
 );
 
 CREATE TABLE Data (
-	MakeID VARCHAR(10) PRIMARY KEY,
+	Id VARCHAR(10) PRIMARY KEY,
 	MPG CHAR(2),
 	Cylinders CHAR(2),
 	Edispl VARCHAR(4),
-	HP CHAR(3),
+	Horsepower CHAR(3),
 	Weight VARCHAR(5),
-	Accel VARCHAR(10),
+	Accelerate VARCHAR(10),
 	Year CHAR(4)
 );
 
