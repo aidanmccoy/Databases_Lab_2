@@ -9,7 +9,7 @@ CREATE TABLE Airlines (
 
 CREATE TABLE Airports (
 	City VARCHAR(100),
-	AirportCode CHAR(3) PRIMARY KEY,
+	AirportCode CHAR(5) PRIMARY KEY,
 	AirportName VARCHAR(100),
 	Country VARCHAR(100),
 	CountryAbbrev VARCHAR(100)
