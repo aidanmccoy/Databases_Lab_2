@@ -9,14 +9,14 @@ CREATE TABLE Airlines (
 
 CREATE TABLE Airports (
 	City VARCHAR(22),
-	AirportCode CHAR(5) PRIMARY KEY,
+	AirportCode VARCHAR(6) PRIMARY KEY,
 	AirportName VARCHAR(50),
 	Country VARCHAR(16),
 	CountryAbbrev VARCHAR(5)
 );
 
 CREATE TABLE Flights (
-	Airline INT NOT NULL,
+	Airline INTEGER NOT NULL,
 	FlightNo INTEGER PRIMARY KEY,
 	SourceAirport VARCHAR(6),
 	DestAirport VARCHAR(6),
