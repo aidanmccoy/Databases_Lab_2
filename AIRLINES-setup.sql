@@ -1,23 +1,23 @@
 -- aimccoy
 
 CREATE TABLE Airlines (
-	Id CHAR(2) PRIMARY KEY,
-	Airline VARCHAR(100),
-	Abbreviation VARCHAR(10),
-	Country VARCHAR(100)
+	INTEGER NOT NULL PRIMARY KEY,
+	Airline VARCHAR(22),
+	Abbreviation VARCHAR(13),
+	Country VARCHAR(5)
 );
 
 CREATE TABLE Airports (
-	City VARCHAR(100),
+	City VARCHAR(22),
 	AirportCode CHAR(5) PRIMARY KEY,
-	AirportName VARCHAR(100),
-	Country VARCHAR(100),
-	CountryAbbrev VARCHAR(100)
+	AirportName VARCHAR(50),
+	Country VARCHAR(16),
+	CountryAbbrev VARCHAR(5)
 );
 
 CREATE TABLE Flights (
-	Airline VARCHAR(100),
-	FlightNo VARCHAR(2000),
-	SourceAirport CHAR(3),
-	DestAirport CHAR(3)
+	Airline INTEGER NOT NULL,
+	FlightNo INTEGER,
+	SourceAirport VARCHAR(6),
+	DestAirport VARCHAR(6)
 );
