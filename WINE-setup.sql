@@ -16,7 +16,7 @@ CREATE TABLE Grapes (
 );
 
 CREATE TABLE Wine (
-	No CHAR(2) PRIMARY KEY,
+	No CHAR(4) PRIMARY KEY,
 	Grape VARCHAR(100),
 	Winery VARCHAR(100),
 	Appelation VARCHAR(100),
