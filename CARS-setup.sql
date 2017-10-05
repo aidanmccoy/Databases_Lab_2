@@ -11,7 +11,7 @@ CREATE TABLE Countries (
 	CountryID CHAR(2) PRIMARY KEY,
 	CountryName VARCHAR(100) NOT NULL,
 	Continent CHAR(1) NOT NULL,
-	FOREIGN KEY (Continient) REFERENCES Continents (ContID)
+	FOREIGN KEY (Continent) REFERENCES Continents (ContID)
 );
 
 CREATE TABLE Makers (
