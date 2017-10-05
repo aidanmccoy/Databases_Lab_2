@@ -21,7 +21,7 @@ CREATE TABLE Instruments(
 );
 
 CREATE TABLE Performance(
-	SongId CHAR(5) PRIMARY KEY,
+	SongId CHAR(5),
 	Bandmate CHAR(5),
 	StagePosition VARCHAR(100)
 );
