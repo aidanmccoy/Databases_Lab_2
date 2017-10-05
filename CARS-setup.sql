@@ -25,7 +25,7 @@ CREATE TABLE Continents (
 ContID CHAR(1) PRIMARY KEY,
 Continent VARCHAR(100) NOT NULL);
 
-CREATE TABLE Contries (
+CREATE TABLE Countries (
 CountryID CHAR(2) PRIMARY KEY,
 CountryName VARCHAR(100) NOT NULL,
 Continent CHAR(1) NOT NULL);
