@@ -1,7 +1,7 @@
 -- aimccoy
 
 CREATE TABLE Airlines (
-	INTEGER NOT NULL PRIMARY KEY,
+	INT NOT NULL PRIMARY KEY,
 	Airline VARCHAR(22),
 	Abbreviation VARCHAR(13),
 	Country VARCHAR(5)
@@ -16,7 +16,7 @@ CREATE TABLE Airports (
 );
 
 CREATE TABLE Flights (
-	Airline INTEGER NOT NULL,
+	Airline INT NOT NULL,
 	FlightNo INTEGER,
 	SourceAirport VARCHAR(6),
 	DestAirport VARCHAR(6)
