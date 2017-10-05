@@ -20,7 +20,7 @@ CREATE TABLE Items (
 );
 
 CREATE TABLE Receipts (
-	ReceiptNumber VARCHAR(100) PRIMARY KEY,
+	RecieptNumber VARCHAR(100) PRIMARY KEY,
 	Date DATE,
 	CustomerID CHAR(2)
 );
