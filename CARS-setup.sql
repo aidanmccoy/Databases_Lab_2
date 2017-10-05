@@ -8,9 +8,9 @@ CREATE TABLE Continents (
 );
 
 CREATE TABLE Countries (
-	CountryID CHAR(2) PRIMARY KEY,
+	CountryID INTEGER PRIMARY KEY,
 	CountryName VARCHAR(100) NOT NULL,
-	Continent CHAR(1) NOT NULL,
+	Continent INTEGER NOT NULL,
 	FOREIGN KEY (Continent) REFERENCES Continents (ContID)
 );
 
