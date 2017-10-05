@@ -22,7 +22,8 @@ CREATE TABLE Receipts (
 CREATE TABLE Items (
 	Reciept INTEGER NOT NULL,
 	Ordinal INTEGER NOT NULL,
-	Item VARCHAR(20) PRIMARY KEY,
+	Item VARCHAR(20),
+	PRIMARY KEY (Item, Reciept, Ordinal),	
 	FOREIGN KEY (Reciept) REFERENCES Receipts (RecieptNumber),
 	FOREIGN KEY (Item) REFERENCES Goods (ID)
 );
