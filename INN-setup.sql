@@ -1,7 +1,7 @@
 -- aimccoy
 
 CREATE TABLE Rooms (
-	RoomID CHAR(3) PRIMARY KEY,
+	RoomID CHAR(4) PRIMARY KEY,
 	RoomName VARCHAR(100),
 	Beds CHAR(1),
 	BedType CHAR(1),
