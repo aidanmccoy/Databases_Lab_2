@@ -12,7 +12,8 @@ CREATE TABLE Airports (
 	AirportCode VARCHAR(6) NOT NULL PRIMARY KEY,
 	AirportName VARCHAR(50),
 	Country VARCHAR(16),
-	CountryAbbrev VARCHAR(5)
+	CountryAbbrev VARCHAR(5),
+	UNIQUE (AirportCode)
 );
 
 CREATE TABLE Flights (
@@ -20,7 +21,7 @@ CREATE TABLE Flights (
 	FlightNo INTEGER PRIMARY KEY,
 	SourceAirport VARCHAR(6) NOT NULL,
 	DestAirport VARCHAR(6),
-	-- FOREIGN KEY (Airline) REFERENCES Airlines (Id),
+	FOREIGN KEY (Airline) REFERENCES Airlines (Id),
 	FOREIGN KEY (DestAirport) REFERENCES Airport (AirportCode)
 	-- FOREIGN KEY (SourceAirport) REFERENCES Airport (AirportCode)
 );
