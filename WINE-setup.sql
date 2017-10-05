@@ -23,8 +23,8 @@ CREATE TABLE Wine (
 	State VARCHAR(100),
 	Name VARCHAR(100),
 	Year CHAR(4),
-	Price VARCHAR(10),
-	Score VARCHAR(10),
-	Cases VARCHAR(10),
-	Drink VARCHAR(100)
+	Price VARCHAR(3),
+	Score VARCHAR(2),
+	Cases VARCHAR(6),
+	Drink VARCHAR(5)
 );
