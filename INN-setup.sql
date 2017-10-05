@@ -5,7 +5,7 @@ CREATE TABLE Rooms (
 	RoomName VARCHAR(100),
 	Beds CHAR(1),
 	BedType CHAR(1),
-	MaxOccup Char(2),
+	maxOccupancy Char(2),
 	BasePrice VARCHAR(10),
 	Decor VARCHAR(100)
 );
