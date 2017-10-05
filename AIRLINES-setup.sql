@@ -17,7 +17,7 @@ CREATE TABLE Airports (
 
 CREATE TABLE Flights (
 	Airline VARCHAR(100),
-	FlightNo VARCHAR(100) PRIMARY KEY,
+	FlightNo VARCHAR(2000) PRIMARY KEY,
 	SourceAirport CHAR(3),
 	DestAirport CHAR(3)
 );
