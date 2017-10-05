@@ -11,7 +11,7 @@ CREATE TABLE Campuses (
 CREATE TABLE Fees (
 	Campus VARCHAR(10) NOT NULL,
 	Year CHAR(4) NOT NULL,
-	Fee VARCHAR (10) NOT NULL,
+	CampusFee VARCHAR (10) NOT NULL,
 	PRIMARY KEY (Campus, Year)
 );
 
@@ -26,8 +26,8 @@ CREATE TABLE DiscEnroll (
 	Campus VARCHAR(10) NOT NULL,
 	Discipline VARCHAR(100) NOT NULL,
 	Year CHAR(4) NOT NULL,
-	Undergrad VARCHAR(10),
-	Grad VARCHAR(10),
+	Undergraduate VARCHAR(10),
+	Graduate VARCHAR(10),
 	PRIMARY KEY (Campus, Discipline, Year)
 );
 
@@ -39,8 +39,8 @@ CREATE TABLE Disciplines (
 CREATE TABLE Enrollments (
 	Campus VARCHAR(10) NOT NULL,
 	Year CHAR(4) NOT NULL,
-	TotalEnrollment VARCHAR(10) NOT NULL,
-	FTE VARCHAR(10),
+	TotalEnrollment_AY VARCHAR(10) NOT NULL,
+	FTE_AY VARCHAR(10),
 	PRIMARY KEY (Campus, Year)
 );
 
