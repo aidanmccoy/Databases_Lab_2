@@ -14,7 +14,7 @@ CREATE TABLE Goods (
 );
 
 CREATE TABLE Items (
-	Reciept VARCHAR(50) PRIMARY KEY,
+	Reciept VARCHAR(50),
 	Ordinal VARCHAR(100),
 	Item CHAR(2)
 );
