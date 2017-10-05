@@ -47,7 +47,7 @@ CREATE TABLE Enrollments (
 CREATE TABLE Faculty (
 	Campus VARCHAR(10) NOT NULL,
 	Year CHAR(4) NOT NULL,
-	NumFac VARCHAR(10) NOT NULL,
+	Faculty VARCHAR(10) NOT NULL,
 	PRIMARY KEY (Campus, Year)
 );
 
