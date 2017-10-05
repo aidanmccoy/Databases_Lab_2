@@ -24,5 +24,5 @@ CREATE TABLE Flights (
 	FOREIGN KEY (Airline) REFERENCES Airlines (Id),
 	FOREIGN KEY (SourceAirport) REFERENCES Airports (AirportCode), 
 	FOREIGN KEY (DestAirport) REFERENCES Airports (AirportCode),
-	PRIMARY KEY (FlightNo, SourceAirport)
+	PRIMARY KEY (FlightNo, SourceAirport, DestAirport)
 );
