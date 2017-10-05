@@ -15,7 +15,7 @@ CREATE TABLE Band(
 );
 
 CREATE TABLE Instruments(
-	SongId CHAR(5) PRIMARY KEY,
+	SongId CHAR(5),
 	BandmateId CHAR(5),
 	Instrument VARCHAR(100)
 );
