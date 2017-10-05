@@ -1,16 +1,6 @@
 -- aimccoy
 
-CREATE TABLE Data (
-	Id INTEGER PRIMARY KEY,
-	MPG NUMERIC(4,1),
-	Cylinders INTEGER,
-	Edispl NUMERIC(4,1),
-	Horsepower INTEGER,
-	Weight INTEGER(5),
-	Accelerate NUMERIC(4,1),
-	Year INTEGER,
-	FOREIGN KEY (Id) REFERENCES Names (ID)
-);
+
 
 CREATE TABLE Continents (
 	ContID INTEGER PRIMARY KEY,
@@ -35,7 +25,8 @@ CREATE TABLE Makers (
 CREATE TABLE Models (
 	ModelID INTEGER PRIMARY KEY,
 	Maker INTEGER,
-	Model VARCHAR(20)
+	Model VARCHAR(20),
+	FOREIGN KEY (Maker) REFERENCES Makers (Id)
 );
 
 CREATE TABLE Names(
@@ -43,4 +34,16 @@ CREATE TABLE Names(
 	Model VARCHAR(20) NOT NULL,
 	Make VARCHAR(50),
 	FOREIGN KEY (Model) REFERENCES Models (Model)
+);
+
+CREATE TABLE Data (
+	Id INTEGER PRIMARY KEY,
+	MPG NUMERIC(4,1),
+	Cylinders INTEGER,
+	Edispl NUMERIC(4,1),
+	Horsepower INTEGER,
+	Weight INTEGER(5),
+	Accelerate NUMERIC(4,1),
+	Year INTEGER,
+	FOREIGN KEY (Id) REFERENCES Names (ID)
 );
