@@ -1,9 +1,5 @@
 #Aidan McCoy
 
-DROP TABLE IF EXISTS Airlines;
-DROP TABLE IF EXISTS Airports;
-DROP TABLE IF EXISTS Flights;
-
 CREATE TABLE Airlines (
 ID CHAR(2) PRIMARY KEY,
 Airline VARCHAR(100),

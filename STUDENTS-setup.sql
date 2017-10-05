@@ -1,7 +1,5 @@
 # Aidan McCoy
 
-DROP TABLE IF EXISTS Students;
-
 CREATE TABLE List (
 LastName VARCHAR(100),
 FirstName VARCHAR(100),

@@ -1,7 +1,5 @@
 # Aidan McCoy
 
-DROP TABLE IF EXISTS Marathon;
-
 CREATE TABLE Marathon (
 Place VARCHAR(10),
 Time VARCHAR(10),

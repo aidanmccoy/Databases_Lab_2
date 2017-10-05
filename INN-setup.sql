@@ -1,8 +1,5 @@
 # Aidan McCoy
 
-DROP TABLE IF EXISTS Rooms;
-DROP TABLE IF EXISTS Reservations;
-
 CREATE TABLE Rooms (
 RoomID CHAR(3) PRIMARY KEY,
 RoomName VARCHAR(100),

@@ -1,10 +1,5 @@
 #Aidan McCoy
 
-DROP TABLE IF EXISTS Appelations;
-DROP TABLE IF EXISTS Grapes;
-DROP TABLE IF EXISTS Wine;
-
-
 CREATE TABLE Appelations (
 No CHAR(2) PRIMARY KEY,
 Appelation VARCHAR(100),
