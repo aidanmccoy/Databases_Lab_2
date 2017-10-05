@@ -1,7 +1,7 @@
 -- aimccoy
 
 CREATE TABLE Airlines (
-	INT NOT NULL PRIMARY KEY,
+	INT PRIMARY KEY,
 	Airline VARCHAR(22),
 	Abbreviation VARCHAR(13),
 	Country VARCHAR(5)
