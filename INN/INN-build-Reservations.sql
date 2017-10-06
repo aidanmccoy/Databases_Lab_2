@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Reservations(Code,Room,CheckIn,CheckOut,Rate,LastName,FirstName,Adults,Kids) VALUES (47496,'''RND''',STR_TO_DATE('01-JAN-10','%d-%M-%y'),STR_TO_DATE('06-JAN-10','%d-%M-%y'),150.00,'''KLEVER''','''ERASMO''',1,0);
 INSERT INTO Reservations(Code,Room,CheckIn,CheckOut,Rate,LastName,FirstName,Adults,Kids) VALUES (41112,'''RND''',STR_TO_DATE('06-JAN-10','%d-%M-%y'),STR_TO_DATE('11-JAN-10','%d-%M-%y'),135.00,'''HOOLEY''','''EUGENIO''',1,0);
 INSERT INTO Reservations(Code,Room,CheckIn,CheckOut,Rate,LastName,FirstName,Adults,Kids) VALUES (76809,'''RND''',STR_TO_DATE('12-JAN-10','%d-%M-%y'),STR_TO_DATE('14-JAN-10','%d-%M-%y'),187.50,'''WISWELL''','''JERROD''',1,0);

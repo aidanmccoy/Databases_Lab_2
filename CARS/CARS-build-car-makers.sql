@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Makers(Id,Maker,FullName,Country) VALUES (1,'''amc''','''American Motor Company''',1);
 INSERT INTO Makers(Id,Maker,FullName,Country) VALUES (2,'''volkswagen''','''Volkswagen''',2);
 INSERT INTO Makers(Id,Maker,FullName,Country) VALUES (3,'''bmw''','''BMW''',2);

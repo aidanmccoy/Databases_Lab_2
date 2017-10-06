@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Names(Id,Model,Make) VALUES (1,'''chevrolet''','''chevrolet chevelle malibu''');
 INSERT INTO Names(Id,Model,Make) VALUES (2,'''buick''','''buick skylark 320''');
 INSERT INTO Names(Id,Model,Make) VALUES (3,'''plymouth''','''plymouth satellite''');

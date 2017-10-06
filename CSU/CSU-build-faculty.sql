@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Faculty(Campus,Year,Faculty) VALUES (1,2002,357.1);
 INSERT INTO Faculty(Campus,Year,Faculty) VALUES (2,2002,48.4);
 INSERT INTO Faculty(Campus,Year,Faculty) VALUES (3,2002,742.8);

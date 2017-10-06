@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Degrees(Year,Campus,Degrees) VALUES (1990,1,701);
 INSERT INTO Degrees(Year,Campus,Degrees) VALUES (1991,1,681);
 INSERT INTO Degrees(Year,Campus,Degrees) VALUES (1992,1,791);

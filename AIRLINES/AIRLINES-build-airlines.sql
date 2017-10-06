@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Airlines(Id,Airline,Abbreviation,Country) VALUES (1,'''United Airlines''','''UAL''','''USA''');
 INSERT INTO Airlines(Id,Airline,Abbreviation,Country) VALUES (2,'''US Airways''','''USAir''','''USA''');
 INSERT INTO Airlines(Id,Airline,Abbreviation,Country) VALUES (3,'''Delta Airlines''','''Delta''','''USA''');

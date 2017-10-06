@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Customers(Id,LastName,FirstName) VALUES (1,'''LOGAN''','''JULIET''');
 INSERT INTO Customers(Id,LastName,FirstName) VALUES (2,'''ARZT''','''TERRELL''');
 INSERT INTO Customers(Id,LastName,FirstName) VALUES (3,'''ESPOSITA''','''TRAVIS''');

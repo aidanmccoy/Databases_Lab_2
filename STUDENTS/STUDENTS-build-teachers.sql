@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Teachers(LastName,FirstName,Classroom) VALUES ('''MACROSTIE''','''MIN''',101);
 INSERT INTO Teachers(LastName,FirstName,Classroom) VALUES ('''COVIN''','''JEROME''',102);
 INSERT INTO Teachers(LastName,FirstName,Classroom) VALUES ('''MOYER''','''OTHA''',103);

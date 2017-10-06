@@ -1,4 +1,4 @@
-# Aidan McCoy
+-- aimccoy
 
 SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS List;

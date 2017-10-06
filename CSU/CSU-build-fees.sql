@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Fees(Campus,Year,CampusFee) VALUES (1,1996,1951);
 INSERT INTO Fees(Campus,Year,CampusFee) VALUES (3,1996,2042);
 INSERT INTO Fees(Campus,Year,CampusFee) VALUES (4,1996,1816);

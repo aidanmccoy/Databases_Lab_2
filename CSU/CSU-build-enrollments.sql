@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Enrollments(Campus,Year,TotalEnrollment_AY,FTE_AY) VALUES (1,1956,384,123);
 INSERT INTO Enrollments(Campus,Year,TotalEnrollment_AY,FTE_AY) VALUES (1,1957,432,151);
 INSERT INTO Enrollments(Campus,Year,TotalEnrollment_AY,FTE_AY) VALUES (1,1958,422,178);

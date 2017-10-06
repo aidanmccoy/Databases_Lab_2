@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Models(ModelId,Maker,Model) VALUES (1,1,'''amc''');
 INSERT INTO Models(ModelId,Maker,Model) VALUES (2,2,'''audi''');
 INSERT INTO Models(ModelId,Maker,Model) VALUES (3,3,'''bmw''');

@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Countries(CountryId,CountryName,Continent) VALUES (1,'''usa''',1);
 INSERT INTO Countries(CountryId,CountryName,Continent) VALUES (2,'''germany''',2);
 INSERT INTO Countries(CountryId,CountryName,Continent) VALUES (3,'''france''',2);

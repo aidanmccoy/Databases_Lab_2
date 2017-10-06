@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Wine(No,Grape,Winery,Appelation,State,Name,Year,Price,Score,Cases,Drink) VALUES (1,'''Zinfandel''','''Robert Biale''','''St. Helena''','''California''','''Old Kraft Vineyard''',2008,44,93,275,'''now''');
 INSERT INTO Wine(No,Grape,Winery,Appelation,State,Name,Year,Price,Score,Cases,Drink) VALUES (2,'''Zinfandel''','''Chiarello Family''','''Napa Valley''','''California''','''Giana''',2008,35,93,480,'''now''');
 INSERT INTO Wine(No,Grape,Winery,Appelation,State,Name,Year,Price,Score,Cases,Drink) VALUES (3,'''Zinfandel''','''Robert Biale''','''Napa Valley''','''California''','''Black Chicken''',2008,40,91,2700,'2012');

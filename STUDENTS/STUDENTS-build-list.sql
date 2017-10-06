@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO List(LastName,FirstName,Grade,Classroom) VALUES ('''CAR''','''MAUDE''',2,101);
 INSERT INTO List(LastName,FirstName,Grade,Classroom) VALUES ('''KRISTENSEN''','''STORMY''',6,112);
 INSERT INTO List(LastName,FirstName,Grade,Classroom) VALUES ('''VANDERWOUDE''','''SHERWOOD''',3,107);

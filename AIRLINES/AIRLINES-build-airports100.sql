@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Airports(City,AirportCode,AirportName,Country,CountryAbbrev) VALUES ('''Aberdeen ''','''APG''','''Phillips AAF ''','''United States ''','''US ''');
 INSERT INTO Airports(City,AirportCode,AirportName,Country,CountryAbbrev) VALUES ('''Aberdeen ''','''ABR''','''Municipal ''','''United States ''','''US ''');
 INSERT INTO Airports(City,AirportCode,AirportName,Country,CountryAbbrev) VALUES ('''Abilene ''','''DYS''','''Dyess AFB ''','''United States ''','''US ''');

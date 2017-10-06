@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Performance(SongId,Bandmate,StagePosition) VALUES (1,1,'''back''');
 INSERT INTO Performance(SongId,Bandmate,StagePosition) VALUES (1,2,'''left''');
 INSERT INTO Performance(SongId,Bandmate,StagePosition) VALUES (1,3,'''center''');

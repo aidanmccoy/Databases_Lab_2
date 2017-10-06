@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Flights(Airline,FlightNo,SourceAirport,DestAirport) VALUES (1,28,'''APG''','''ASY''');
 INSERT INTO Flights(Airline,FlightNo,SourceAirport,DestAirport) VALUES (1,29,'''ASY''','''APG''');
 INSERT INTO Flights(Airline,FlightNo,SourceAirport,DestAirport) VALUES (1,44,'''CVO''','''ACV''');

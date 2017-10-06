@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Disciplines(Id,Name) VALUES (1,'''Agriculture''');
 INSERT INTO Disciplines(Id,Name) VALUES (2,'''Architecture''');
 INSERT INTO Disciplines(Id,Name) VALUES (3,'''Area Studies''');

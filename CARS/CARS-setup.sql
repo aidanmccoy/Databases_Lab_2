@@ -1,7 +1,5 @@
 -- aimccoy
 
-
-
 CREATE TABLE Continents (
 	ContID INTEGER PRIMARY KEY,
 	Continent VARCHAR(20) NOT NULL

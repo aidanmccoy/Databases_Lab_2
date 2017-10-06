@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Marathon(Place,Time,Pace,GroupPlace,Grp,Age,Sex,BIBNumber,FirstName,LasName,Town,State) VALUES (1,STR_TO_DATE('1:09:47','%h:%i:%s'),'''5:20''',1,'''20-39''',37,'''M''',340,'''ANDRE''','''PELLAM''','''HALIFAX''','''MA''');
 INSERT INTO Marathon(Place,Time,Pace,GroupPlace,Grp,Age,Sex,BIBNumber,FirstName,LasName,Town,State) VALUES (2,STR_TO_DATE('1:11:08','%h:%i:%s'),'''5:26''',2,'''20-39''',29,'''M''',34,'''HORACE''','''KARPOWICZ''','''BREWSTER''','''MA''');
 INSERT INTO Marathon(Place,Time,Pace,GroupPlace,Grp,Age,Sex,BIBNumber,FirstName,LasName,Town,State) VALUES (3,STR_TO_DATE('1:15:43','%h:%i:%s'),'''5:47''',3,'''20-39''',27,'''M''',399,'''MILES''','''ROSELLA''','''PEACEDALE''','''RI''');

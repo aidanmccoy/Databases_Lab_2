@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Rooms(RoomId,roomName,beds,bedType,maxOccupancy,basePrice,decor) VALUES ('''RND''','''Recluse and defiance''',1,'''King''',2,150,'''modern''');
 INSERT INTO Rooms(RoomId,roomName,beds,bedType,maxOccupancy,basePrice,decor) VALUES ('''IBS''','''Interim but salutary''',1,'''King''',2,150,'''traditional''');
 INSERT INTO Rooms(RoomId,roomName,beds,bedType,maxOccupancy,basePrice,decor) VALUES ('''AOB''','''Abscond or bolster''',2,'''Queen''',4,175,'''traditional''');

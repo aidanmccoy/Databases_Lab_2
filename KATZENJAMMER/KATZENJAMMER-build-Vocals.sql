@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Vocals(SongId,Bandmate,Type) VALUES (2,1,'''lead''');
 INSERT INTO Vocals(SongId,Bandmate,Type) VALUES (2,3,'''chorus''');
 INSERT INTO Vocals(SongId,Bandmate,Type) VALUES (2,4,'''chorus''');

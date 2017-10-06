@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Appelations(No,Appelation,County,State,Area,isAVA) VALUES (1,'''Alexander Valley''','''Sonoma''','''California''','''North Coast''','''Yes''');
 INSERT INTO Appelations(No,Appelation,County,State,Area,isAVA) VALUES (2,'''Amador County''','''Amador''','''California''','''Sierra Foothills''','''No''');
 INSERT INTO Appelations(No,Appelation,County,State,Area,isAVA) VALUES (3,'''Amador-Mendocino-Sonoma Counties''','''N/A''','''California''','''N/A''','''No''');

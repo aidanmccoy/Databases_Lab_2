@@ -1,3 +1,5 @@
+-- aimccoy
+
 INSERT INTO Receipts(RecieptNumber,Date,CustomerId) VALUES (18129,STR_TO_DATE('28-Oct-2007','%d-%M-%Y'),15);
 INSERT INTO Receipts(RecieptNumber,Date,CustomerId) VALUES (51991,STR_TO_DATE('17-Oct-2007','%d-%M-%Y'),14);
 INSERT INTO Receipts(RecieptNumber,Date,CustomerId) VALUES (83085,STR_TO_DATE('12-Oct-2007','%d-%M-%Y'),7);
