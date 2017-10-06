@@ -29,5 +29,5 @@ CREATE TABLE Wine (
 	Cases INTEGER,
 	Drink VARCHAR(10),
 	FOREIGN KEY (Grape) REFERENCES Grapes (Grape),
-	FOREIGN KEY (Appelation) REFERENCES Appelations (Appelation)
+	-- FOREIGN KEY (Appelation) REFERENCES Appelations (Appelation)
 );
