@@ -1,45 +1,56 @@
 -- aimccoy
 
 CREATE TABLE Albums (
-	AId CHAR(5) PRIMARY KEY,
-	Title VARCHAR(100),
-	Year VARCHAR(100),
-	Label VARCHAR(100),
-	Type VARCHAR(100)
+	AId INTEGER PRIMARY KEY,
+	Title VARCHAR(50),
+	Year INTEGER,
+	Label VARCHAR(25),
+	Type VARCHAR(10)
 );
 
 CREATE TABLE Band(
-	Id CHAR(1) PRIMARY KEY,
-	Firstname VARCHAR(100),
-	Lastname VARCHAR(100)
-);
-
-CREATE TABLE Instruments(
-	SongId CHAR(5),
-	BandmateId CHAR(5),
-	Instrument VARCHAR(100)
-);
-
-CREATE TABLE Performance(
-	SongId CHAR(5),
-	Bandmate CHAR(5),
-	StagePosition VARCHAR(100)
+	Id INTEGER PRIMARY KEY,
+	Firstname VARCHAR(15),
+	Lastname VARCHAR(15)
 );
 
 CREATE TABLE Songs(
-	SongId CHAR(5) PRIMARY KEY,
-	Title VARCHAR(100)
+	SongId INTEGER PRIMARY KEY,
+	Title VARCHAR(50)
+);
+
+CREATE TABLE Instruments(
+	SongId INTEGER,
+	BandmateId INTEGER,
+	Instrument VARCHAR(20),
+	FOREIGN KEY (SongId) REFERENCES Songs (SongId),
+	FOREIGN KEY (BandmateId) REFERENCES Band (Id),
+	PRIMARY KEY (SongId, BandmadeId, Instrument)
+);
+
+CREATE TABLE Performance(
+	SongId INTEGER,
+	Bandmate INTEGER,
+	StagePosition VARCHAR(10)
+	FOREIGN KEY (SongId) REFERENCES Songs (SongId),
+	FOREIGN KEY (Bandmate) REFERENCES Band (Id),
+	PRIMARY KEY (SongId, Bandmate, StagePosition)
 );
 
 CREATE TABLE Tracklist(
-	AlbumId CHAR(5),
-	Position VARCHAR(10),
-	SongId CHAR(5),
-	PRIMARY KEY (AlbumID, SongID)
+	AlbumId INTEGER,
+	Position INTEGER,
+	SongId INTEGER,
+	PRIMARY KEY (AlbumID, SongID),
+	FOREIGN KEY (AlbumId) REFERENCES Albums (AId),
+	FOREIGN KEY (SongId) REFERENCES Songs (SongId)
 );
 
 CREATE TABLE Vocals(
-	SongID CHAR(5),
-	Bandmate CHAR(5),
-	Type CHAR(6)
+	SongID INTEGER,
+	Bandmate INTEGER,
+	Type VARCHAR(10),
+	FOREIGN KEY (SongID) REFERENCES Songs (SongId),
+	FOREIGN KEY (Bandmate) REFERENCES Band (Id),
+	PRIMARY KEY (SongID, Bandmate, Type)
 );
