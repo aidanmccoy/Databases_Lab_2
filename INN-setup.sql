@@ -1,23 +1,24 @@
 -- aimccoy
 
 CREATE TABLE Rooms (
-	RoomID CHAR(4) PRIMARY KEY,
-	RoomName VARCHAR(100),
-	Beds CHAR(1),
-	BedType CHAR(1),
-	maxOccupancy Char(2),
-	BasePrice VARCHAR(10),
-	Decor VARCHAR(100)
+	RoomID VARCHAR(5) PRIMARY KEY,
+	RoomName VARCHAR(30),
+	Beds INTEGER,
+	BedType VARCHAR(10),
+	maxOccupancy INTEGER,
+	BasePrice INTEGER,
+	Decor VARCHAR(20)
 );
 
 CREATE TABLE Reservations (
-	Code CHAR(10) PRIMARY KEY,
-	Room CHAR(3),
+	Code INTEGER PRIMARY KEY,
+	Room VARCHAR(10),
 	CheckIn DATE,
 	CheckOut DATE,
-	Rate VARCHAR(10),
-	LastName VARCHAR(100),
-	FirstName VARCHAR(100),
-	Adults CHAR(1),
-	Kids CHAR(1)
+	Rate NUMERIC(6,2),
+	LastName VARCHAR(20),
+	FirstName VARCHAR(20),
+	Adults INTEGER,
+	Kids INTEGER,
+	FOREIGN KEY (Room) REFERENCES Rooms (RoomID)
 );
