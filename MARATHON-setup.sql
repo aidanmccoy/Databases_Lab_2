@@ -1,16 +1,16 @@
 -- aimccoy
 
 CREATE TABLE Marathon (
-	Place VARCHAR(10),
+	Place INTEGER,
 	Time VARCHAR(10),
 	Pace VARCHAR(10),
-	GroupPlace VARCHAR(10),
+	GroupPlace INTEGER,
 	Grp VARCHAR(10),
-	Age CHAR(2),
-	Sex CHAR(1),
-	BIBNumber VARCHAR(10),
-	FirstName VARCHAR(100),
-	LasName VARCHAR(100),
-	Town VARCHAR(100),
-	State VARCHAR(100)
+	Age INTEGER,
+	Sex VARCHAR(5),
+	BIBNumber INTEGER,
+	FirstName VARCHAR(20),
+	LasName VARCHAR(20),
+	Town VARCHAR(20),
+	State VARCHAR(10)
 );
