@@ -50,7 +50,7 @@ CREATE TABLE Enrollments (
 
 CREATE TABLE Faculty (
 	Campus INTEGER NOT NULL,
-	Year ITEGER NOT NULL,
+	Year INTEGER NOT NULL,
 	Faculty NUMERIC(6,1) NOT NULL,
 	PRIMARY KEY (Campus, Year),
 	FOREIGN KEY (Campus) REFERENCES Campuses (ID)
