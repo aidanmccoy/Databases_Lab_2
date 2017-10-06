@@ -1,16 +1,16 @@
 -- aimccoy
 
 CREATE TABLE List (
-	LastName VARCHAR(100),
-	FirstName VARCHAR(100),
-	Grade CHAR(2),
-	Classroom VARCHAR(10),
+	LastName VARCHAR(20),
+	FirstName VARCHAR(20),
+	Grade INTEGER,
+	Classroom INTEGER,
 	PRIMARY KEY (FirstName, LastName)
 );
 
 CREATE TABLE Teachers (
-	LastName VARCHAR(100),
-	FirstName VARCHAR(100),
-	Classroom VARCHAR(10),
+	LastName VARCHAR(20),
+	FirstName VARCHAR(20),
+	Classroom INTEGER,
 	PRIMARY KEY (FirstName, LastName)
 );
