@@ -25,7 +25,7 @@ CREATE TABLE Instruments(
 	Instrument VARCHAR(20),
 	FOREIGN KEY (SongId) REFERENCES Songs (SongId),
 	FOREIGN KEY (BandmateId) REFERENCES Band (Id),
-	PRIMARY KEY (SongId, BandmadeId, Instrument)
+	PRIMARY KEY (SongId, BandmateId, Instrument)
 );
 
 CREATE TABLE Performance(
