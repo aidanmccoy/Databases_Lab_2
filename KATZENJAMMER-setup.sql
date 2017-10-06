@@ -31,7 +31,7 @@ CREATE TABLE Instruments(
 CREATE TABLE Performance(
 	SongId INTEGER,
 	Bandmate INTEGER,
-	StagePosition VARCHAR(10)
+	StagePosition VARCHAR(10),
 	FOREIGN KEY (SongId) REFERENCES Songs (SongId),
 	FOREIGN KEY (Bandmate) REFERENCES Band (Id),
 	PRIMARY KEY (SongId, Bandmate, StagePosition)
