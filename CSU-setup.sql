@@ -1,54 +1,59 @@
 -- aimccoy
 
 CREATE TABLE Campuses (
-	ID VARCHAR(10) PRIMARY KEY,
+	ID INTEGER(10) PRIMARY KEY,
 	Campus VARCHAR(100) NOT NULL,
-	Location VARCHAR(100) NOT NULL,
-	County VARCHAR(100) NOT NULL,
-	Year CHAR(4) NOT NULL
+	Location VARCHAR(20) NOT NULL,
+	County VARCHAR(20) NOT NULL,
+	Year INTEGER NOT NULL
 );
 
 CREATE TABLE Fees (
-	Campus VARCHAR(10) NOT NULL,
-	Year CHAR(4) NOT NULL,
-	CampusFee VARCHAR (10) NOT NULL,
+	Campus INTEGER NOT NULL,
+	Year INTEGER NOT NULL,
+	CampusFee INTEGER NOT NULL,
 	PRIMARY KEY (Campus, Year)
 );
 
 CREATE TABLE Degrees (
-	Year CHAR(4) NOT NULL,
-	Campus VARCHAR(10) NOT NULL,
-	Degrees VARCHAR(10) NOT NULL,
-	PRIMARY KEY (Campus, Year)
-);
-
-CREATE TABLE DiscEnroll (
-	Campus VARCHAR(10) NOT NULL,
-	Discipline VARCHAR(100) NOT NULL,
-	Year CHAR(4) NOT NULL,
-	Undergraduate VARCHAR(10),
-	Graduate VARCHAR(10),
-	PRIMARY KEY (Campus, Discipline, Year)
+	Year INTEGER NOT NULL,
+	Campus INTEGER NOT NULL,
+	Degrees INTEGER NOT NULL,
+	PRIMARY KEY (Campus, Year),
+	FOREIGN KEY (Campus) REFERENCES Campuses (ID)
 );
 
 CREATE TABLE Disciplines (
-	ID VARCHAR(10) PRIMARY KEY,
-	Name VARCHAR(100) NOT NULL
+	ID INTEGER PRIMARY KEY,
+	Name VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE DiscEnroll (
+	Campus INTEGER NOT NULL,
+	Discipline INTEGER NOT NULL,
+	Year INTEGER NOT NULL,
+	Undergraduate INTEGER,
+	Graduate INTEGER,
+	PRIMARY KEY (Campus, Discipline, Year),
+	FOREIGN KEY (Campus) REFERENCES Campuses (ID),
+	FOREIGN KEY (Discipline) REFERENCES Disciplines (ID)
 );
 
 CREATE TABLE Enrollments (
-	Campus VARCHAR(10) NOT NULL,
-	Year CHAR(4) NOT NULL,
-	TotalEnrollment_AY VARCHAR(10) NOT NULL,
-	FTE_AY VARCHAR(10),
-	PRIMARY KEY (Campus, Year)
+	Campus INTEGER NOT NULL,
+	Year INTEGER NOT NULL,
+	TotalEnrollment_AY INTEGER NOT NULL,
+	FTE_AY INTEGER,
+	PRIMARY KEY (Campus, Year),
+	FOREIGN KEY (Campus) REFERENCES Campuses (ID)
 );
 
 CREATE TABLE Faculty (
-	Campus VARCHAR(10) NOT NULL,
-	Year CHAR(4) NOT NULL,
-	Faculty VARCHAR(10) NOT NULL,
-	PRIMARY KEY (Campus, Year)
+	Campus INTEGER NOT NULL,
+	Year ITEGER NOT NULL,
+	Faculty NUMERIC(6,1) NOT NULL,
+	PRIMARY KEY (Campus, Year),
+	FOREIGN KEY (Campus) REFERENCES Campuses (ID)
 );
 
 
