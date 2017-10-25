@@ -16,13 +16,13 @@ echo build degrees
 mysql -h csc365fall2017.webredirect.org aimccoy < CSU-build-degrees.sql
 
 echo build dixcliplines
-mysql -h csc365fall2017.webredirect.org aimccoy < BAKERY-build-disciplines.sql
+mysql -h csc365fall2017.webredirect.org aimccoy < CSU-build-disciplines.sql
 
 echo build discEnroll
-mysql -h csc365fall2017.webredirect.org aimccoy < BAKERY-build-disciplines.sql
+mysql -h csc365fall2017.webredirect.org aimccoy < CSU-build-discipline-enrollments.sql
 
 echo build Enrollments
-mysql -h csc365fall2017.webredirect.org aimccoy < BAKERY-build-disciplines.sql
+mysql -h csc365fall2017.webredirect.org aimccoy < CSU-build-enrollments.sql
 
 echo build faculty
-mysql -h csc365fall2017.webredirect.org aimccoy < BAKERY-build-disciplines.sql
+mysql -h csc365fall2017.webredirect.org aimccoy < CSU-build-faculty.sql
