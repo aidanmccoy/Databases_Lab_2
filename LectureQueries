@@ -1,0 +1,7 @@
+6) 
+SELECT, DISTINCT B.Name
+FROM Bands 
+INNER JOIN Musicians ON B.ID = M.BandID
+WHERE M.Name = 'M. K.';
+
+PI B.name(Select Name='MichaelKarili(M) crossjoin Band=iD B)
